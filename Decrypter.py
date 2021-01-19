@@ -25,7 +25,6 @@ class Ciphers:
                 self.message[x] = alphabetCipherText[alphabetPlainText.index(self.message[x].upper())]
         return self.message
 
-
     def CaesarCipher(self, shift = 3):
         self.message = self.SubstitutionCipher(self.RotateRotor(shift))
         return self.message
